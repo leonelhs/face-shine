@@ -1,0 +1,5 @@
+numpy>=1.24.3
+torch>=2.0.0
+opencv-python>=4.7.0.72
+flask>=2.3.2
+flask_restful>=0.3.10
