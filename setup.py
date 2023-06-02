@@ -26,7 +26,10 @@ def get_install_requires():
         "torch>=2.0.0",
         "opencv-python>=4.7.0.72",
         "flask>=2.3.2",
-        "flask_restful>=0.3.10"
+        "flask_restful>=0.3.10",
+        "pillow>=9.5.0",
+        "torchvision-0.15.2",
+        "colorama"
     ]
 
     return install_requires
