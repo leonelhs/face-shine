@@ -11,7 +11,7 @@ import numpy as np
 import torch
 
 from faceshine import array2image, image_to_tensor
-from .base.Task import Task
+from faceshine.tasks import Task
 
 
 class TaskZeroBackground(Task):

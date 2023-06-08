@@ -5,7 +5,7 @@
 #
 ##############################################################################
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def get_version():
@@ -24,12 +24,20 @@ def get_install_requires():
     install_requires = [
         "numpy>=1.24.3",
         "torch>=2.0.0",
-        "opencv-python>=4.7.0.72",
+        "opencv-python",
         "flask>=2.3.2",
         "flask_restful>=0.3.10",
         "pillow>=9.5.0",
-        "torchvision-0.15.2",
-        "colorama"
+        "torchvision",
+        "colorama",
+        "matplotlib",
+        "fastprogress",
+        "pandas",
+        "scipy",
+        "deoldify",
+        "realesrgan",
+        "zeroscratches",
+        "huggingface_hub"
     ]
 
     return install_requires
@@ -56,8 +64,8 @@ def main():
         version=get_version(),
         long_description=get_long_description(),
         long_description_content_type="text/markdown",
-        packages=['faceshine', 'faceshine.segmentation', 'faceshine.segmentation.base'],
-        url='https://github.com/leonelhs/yapsy-gui',
+        packages=find_packages(),
+        url='https://github.com/leonelhs/faceshine',
         license='Apache',
         author='leonel hernandez',
         author_email='leonelhs@gmail.com',
